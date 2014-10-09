@@ -2,18 +2,19 @@ body{
 	font-family: futura;
 	font-size: 20px;
 	text-transform: uppercase;
-	background: #20a5e3;
+	background: white;
 	margin: 0 10%;
 	text-align: center;
 }
 
 a{
-	color: white;
+	color: grey;
 	text-decoration: none;
 }
 
 .logo{
 	display: inline-block;
+	max-width: 80%;
 	width: 400px;
 	height: 40px;
 	text-indent: -999999999px;
