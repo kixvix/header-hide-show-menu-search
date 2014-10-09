@@ -3,7 +3,7 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   background: white;
-  margin: 0 10%;
+  margin: 0;
   text-align: center; }
 
 a {
@@ -26,41 +26,79 @@ a {
 
 .menu {
   padding: 0;
-  margin: 20px 0 0 0;
-  display: none; }
+  margin-bottom: -200px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  @media (min-width: 600px) {
+    .menu {
+      margin: 20px 0 -200px 0; } }
 
 .menu li {
   list-style: none;
-  display: block;
   padding: 10px; }
 
-#showmenu:checked + .menu-wrapper .menu {
-  display: block; }
-
 .searchbar {
-  display: none; }
-
-#showsearchbar:checked + .searchbar-wrapper .searchbar {
-  display: block; }
+  margin-bottom: -30px;
+  opacity: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
 
 .menuicon {
   display: block;
   position: fixed;
   top: 10px;
   left: 10px;
-  font-size: 35px;
+  font-size: 24px;
   cursor: pointer; }
+  @media (min-width: 600px) {
+    .menuicon {
+      font-size: 35px; } }
 
 .searchbaricon {
   display: block;
   position: fixed;
   top: 10px;
   right: 10px;
-  width: 40px;
-  height: 60px;
   text-indent: -999999px;
   background-image: url('images/searchicon.svg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 25px;
+  height: 45px; }
+  @media (min-width: 600px) {
+    .searchbaricon {
+      width: 40px;
+      height: 60px; } }
+
+#showmenu:checked + .menu-wrapper .menu {
+  display: block;
+  margin-bottom: 40px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+#showsearchbar:checked + .searchbar-wrapper .searchbar {
+  display: block;
+  margin-bottom: 30px;
+  opacity: 1;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+.main {
+  background: beige;
+  height: 800px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
